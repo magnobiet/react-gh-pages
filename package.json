@@ -2,7 +2,7 @@
   "name": "react-gh-pages",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://magnobiet.com/react-gh-pages/",
+  "homepage": "https://react-app.magnobiet.com/",
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -13,7 +13,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp CNAME build/",
     "deploy": "npx gh-pages -d build"
   },
   "eslintConfig": {
